@@ -153,7 +153,7 @@ def handle(x):
 
     for i, c in enumerate(v):
         if c != m:
-            v(i) = m
+            v(i) == m
     return pd.Series(v, index=ind)
 df['Total_EMI_per_month'] = df.groupby('Customer_ID')['Total_EMI_per_month'].transform(lambda x: handle(x))
 
